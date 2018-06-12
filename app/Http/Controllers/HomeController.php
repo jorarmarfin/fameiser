@@ -21,7 +21,9 @@ class HomeController extends Controller
 	}
 	public function nosotros()
 	{
-		return view('web.nosotros');
+		$nosotros = $this->drupal->getRequest('nosotros',true);
+
+		return view('web.nosotros',compact('nosotros'));
 	}
 
 }
