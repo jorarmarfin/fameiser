@@ -19,6 +19,7 @@ class HomeController extends Controller
 		$portada = $this->drupal->getRequest('portada',true);
 		$galeria = $this->drupal->getRequest('galeria',true);
 		$imagenes = explode(',',$galeria[0]->imagenes);
+
 		return view('index',compact('portada','imagenes','galeria'));
 	}
 	public function nosotros()

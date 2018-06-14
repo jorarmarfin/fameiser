@@ -47,7 +47,7 @@
                 <div class="container">
                     <div class="column one">
                         <div class="copyright">
-                            &copy; 2018 BeMechanic 3 - BeTheme. Muffin group - HTML by <a target="_blank" rel="nofollow" href="http://bit.ly/1M6lijQ">BeantownThemes</a>
+                            {!! $footer->resumen !!}
                         </div>
 
                     </div>
@@ -88,7 +88,7 @@
     <script src="plugins/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
     <script src="plugins/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 
-    <script src="http://maps.google.com/maps/api/js?sensor=false&ver=5.9"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtk8IUc6r4O65FBbi2x4Z0fwZQ4QDds9Q"></script>
     <script src="js/email.js"></script>
 
 
@@ -136,14 +136,13 @@
 				}());
     </script>
     <script>
-        function google_maps_5ace49a803440() {
-			var latlng = new google.maps.LatLng(-33.8710, 151.2039);
-			var draggable = true;
-			var myOptions = {
-				zoom : 13,
-				center : latlng,
-				mapTypeId : google.maps.MapTypeId.ROADMAP,
-				styles : [{
+    function google_maps_5ace49a803440() {
+        var latlng = new google.maps.LatLng(-12.0176417, -77.0057973);
+		var myOptions = {
+			zoom: 16,
+			center: latlng,
+			mapTypeId : google.maps.MapTypeId.ROADMAP,
+			styles : [{
 					featureType : "all",
 					elementType : "labels",
 					stylers : [{
@@ -238,19 +237,18 @@
 						lightness : "-20"
 					}]
 				}],
-				draggable : draggable,
-				zoomControl : true,
-				mapTypeControl : false,
-				streetViewControl : false,
-				scrollwheel : false
-			};
-			var map = new google.maps.Map(document.getElementById("google-map-area-5ace49a803440"), myOptions);
-			var marker = new google.maps.Marker({
-				position : latlng,
-				icon : "content/mechanic3/images/home_mechanic3_pic14.png",
-				map : map
-			});
+			zoomControl : true,
+			mapTypeControl : false,
+			streetViewControl : false,
+			scrollwheel : false,
 		}
+		var map = new google.maps.Map(document.getElementById('google-map-area-5ace49a803440'),myOptions);
+        var marker = new google.maps.Marker({
+          position: latlng,
+          icon : "content/mechanic3/images/home_mechanic3_pic14.png",
+          map: map
+        });
+     }
 		jQuery(document).ready(function($) {
 			google_maps_5ace49a803440();
 		});

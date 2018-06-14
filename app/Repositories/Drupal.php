@@ -17,9 +17,10 @@ class Drupal
 		]);
 	}
 
-	public function getRequest($name,$isarray=false)
+	public function getRequest($name,$isarray=false,$nid=null)
 	{
-		$sufijo = '?_format=json';
+		$retVal = ($name=='nid') ? '/'.$nid : '' ;
+		$sufijo = $retVal.'?_format=json';
 		$url = '/api/'.$name.$sufijo;
 		$response = $this->client->request('GET',$url);
 

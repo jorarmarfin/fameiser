@@ -80,6 +80,7 @@
                     </div>
                 </div>
             </div>
+            {{-- Servicios --}}
             <div class="section mcb-section no-margin-h" style="padding-top:120px; padding-bottom:0px; background-color:#030720">
                 <div class="section_wrapper mcb-section-inner">
                     <div class="wrap mcb-wrap one-second valign-top clearfix">
@@ -113,6 +114,7 @@
                     </div>
                 </div>
             </div>
+            {{-- Performance --}}
             <div class="section mcb-section" style="padding-top:20px; padding-bottom:280px; background-color:#030720; background-image:url(content/mechanic3/images/home_mechanic3_sectionbg1.jpg); background-repeat:no-repeat; background-position:center bottom">
                 <div class="section_wrapper mcb-section-inner">
                     <div class="wrap mcb-wrap one valign-top clearfix">
@@ -157,6 +159,7 @@
                     </div>
                 </div>
             </div>
+            {{-- Galeria --}}
             <div class="section mcb-section no-margin-h no-margin-v" style="padding-top:0px; padding-bottom:0px; background-color:#030720">
                 <div class="section_wrapper mcb-section-inner">
                     <div class="wrap mcb-wrap one valign-top clearfix">
@@ -177,8 +180,8 @@
                             <div class="column mcb-column one column_image">
                                 <div class="image_frame image_item scale-with-grid aligncenter no_border">
                                     <div class="image_wrapper">
-                                        <a href="{{ $imagenes[7] }}" rel="prettyphoto">
-                                                <img class="scale-with-grid" src="{{ $imagenes[7] }}">
+                                        <a href="{{ $imagenes[0] }}" rel="prettyphoto">
+                                                <img class="scale-with-grid" src="{{ $imagenes[0] }}">
                                             </a>
                                     </div>
                                 </div>
@@ -190,8 +193,8 @@
                             <div class="column mcb-column one-second column_image">
                                 <div class="image_frame image_item scale-with-grid aligncenter no_border">
                                     <div class="image_wrapper">
-                                        <a href="{{ $imagenes[3] }}" rel="prettyphoto">
-                                                <img class="scale-with-grid" src="{{ $imagenes[3] }}">
+                                        <a href="{{ $imagenes[4] }}" rel="prettyphoto">
+                                                <img class="scale-with-grid" src="{{ $imagenes[4] }}">
                                             </a>
                                     </div>
                                 </div>
@@ -199,8 +202,8 @@
                             <div class="column mcb-column one-second column_image">
                                 <div class="image_frame image_item scale-with-grid aligncenter no_border">
                                     <div class="image_wrapper">
-                                        <a href="{{ $imagenes[2] }}" rel="prettyphoto">
-                                                <img class="scale-with-grid" src="{{ $imagenes[2] }}">
+                                        <a href="{{ $imagenes[5] }}" rel="prettyphoto">
+                                                <img class="scale-with-grid" src="{{ $imagenes[5] }}">
                                             </a>
                                     </div>
                                 </div>
@@ -208,8 +211,8 @@
                             <div class="column mcb-column one column_image">
                                 <div class="image_frame image_item scale-with-grid aligncenter no_border">
                                     <div class="image_wrapper">
-                                        <a href="{{ $imagenes[5] }}" rel="prettyphoto">
-                                                <img class="scale-with-grid" src="{{ $imagenes[5] }}">
+                                        <a href="{{ $imagenes[2] }}" rel="prettyphoto">
+                                                <img class="scale-with-grid" src="{{ $imagenes[2] }}">
                                             </a>
                                     </div>
                                 </div>
@@ -224,8 +227,8 @@
                             <div class="column mcb-column one column_image">
                                 <div class="image_frame image_item scale-with-grid aligncenter no_border">
                                     <div class="image_wrapper">
-                                        <a href="{{ $imagenes[4] }}" rel="prettyphoto">
-                                                <img class="scale-with-grid" src="{{ $imagenes[4] }}">
+                                        <a href="{{ $imagenes[3] }}" rel="prettyphoto">
+                                                <img class="scale-with-grid" src="{{ $imagenes[3] }}">
                                             </a>
                                     </div>
                                 </div>
@@ -237,8 +240,8 @@
                             <div class="column mcb-column one column_image">
                                 <div class="image_frame image_item scale-with-grid aligncenter no_border">
                                     <div class="image_wrapper">
-                                        <a href="{{ $imagenes[1] }}" rel="prettyphoto">
-                                                <img class="scale-with-grid" src="{{ $imagenes[1] }}">
+                                        <a href="{{ $imagenes[6] }}" rel="prettyphoto">
+                                                <img class="scale-with-grid" src="{{ $imagenes[6] }}">
                                             </a>
                                     </div>
                                 </div>
@@ -246,8 +249,8 @@
                             <div class="column mcb-column one column_image">
                                 <div class="image_frame image_item scale-with-grid aligncenter no_border">
                                     <div class="image_wrapper">
-                                        <a href="{{ $imagenes[0] }}" rel="prettyphoto">
-                                                <img class="scale-with-grid" src="{{ $imagenes[0] }}">
+                                        <a href="{{ $imagenes[7] }}" rel="prettyphoto">
+                                                <img class="scale-with-grid" src="{{ $imagenes[7] }}">
                                             </a>
                                     </div>
                                 </div>
@@ -259,8 +262,8 @@
                             <div class="column mcb-column one column_image">
                                 <div class="image_frame image_item scale-with-grid aligncenter no_border">
                                     <div class="image_wrapper">
-                                        <a href="{{ $imagenes[6] }}" rel="prettyphoto">
-                                                <img class="scale-with-grid" src="{{ $imagenes[6] }}">
+                                        <a href="{{ $imagenes[1] }}" rel="prettyphoto">
+                                                <img class="scale-with-grid" src="{{ $imagenes[1] }}">
                                             </a>
                                     </div>
                                 </div>
@@ -281,21 +284,9 @@
                             </div>
                             <div class="column mcb-column one column_column">
                                 <div class="column_attr clearfix">
-                                    <h2 style="color: #fff">Mauris in imperdiet placerat</h2>
-                                    <h4 class="themecolor">Lorem ipsum dolor sit</h4>
+                                    <h2 style="color: #fff">{{ $portada[5]->titulo }}</h2>
                                     <hr class="no_line" style="margin: 0 auto 20px">
-                                    <p>
-                                        Level 13, 2 Elizabeth St,
-                                        <br> Melbourne, Victoria 3000
-                                    </p>
-                                    <p>
-                                        Monday - Friday
-                                        <br> 11:00 am - 11:30 pm
-                                    </p>
-                                    <p>
-                                        Saturday - Sunday
-                                        <br> 14:00 am - 11:30 pm
-                                    </p>
+                                    {!! $portada[5]->body !!}
                                 </div>
                             </div>
                         </div>
@@ -305,14 +296,15 @@
                             <div class="column mcb-column one column_map">
 
                                 <div class="google-map-wrapper no_border">
-                                    <div class="google-map" id="google-map-area-5ace49a803440" style="width:100%; height:550px">
+{{--                                     <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d975.5944264524392!2d-77.00566941102923!3d-12.01749752279503!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1528954582861" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+ --}}                                    <div class="google-map" id="google-map-area-5ace49a803440" style="width:100%; height:550px">
                                         &nbsp;
                                     </div>
                                 </div>
                             </div>
                             <div class="column mcb-column one column_button">
                                 <div class="button_align align_center">
-                                    <a class="button button_size_2 button_js" href="content/mechanic3/contact.html" style=" color:#fff"><span class="button_label">Show the entire map</span></a>
+                                    <a class="button button_size_2 button_js" href="content/mechanic3/contact.html" style=" color:#fff"><span class="button_label">Mira el mapa entero</span></a>
                                 </div>
                             </div>
                         </div>
@@ -322,7 +314,7 @@
                             <div class="column mcb-column one column_column column-margin-20px">
                                 <div class="column_attr clearfix align_center">
                                     <p class="big" style="color: #848bba">
-                                        Arrange date
+                                        Llamanos
                                         <br> of visit
                                     </p>
                                 </div>
@@ -336,10 +328,10 @@
                             </div>
                             <div class="column mcb-column one column_column">
                                 <div class="column_attr clearfix align_center">
-                                    <h4 class="themecolor">+61 (0)</h4>
-                                    <h2 style="color: #fff">383
-                                        <br> 766
-                                        <br> 284
+                                    <h4 class="themecolor">+51 (0)</h4>
+                                    <h2 style="color: #fff">659
+                                        <br> 71
+                                        <br> 76
                                     </h2>
                                 </div>
                             </div>
