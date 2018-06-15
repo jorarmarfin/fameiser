@@ -14,7 +14,11 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->composer(['layout.index','layout.page'],logo::class);
+        view()->composer([
+            'layout.index',
+            'layout.page',
+            'web.nosotros'
+        ],logo::class);
     }
 
     /**

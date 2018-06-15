@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
     <!-- FONTS -->
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700'>
@@ -71,7 +71,7 @@
                 <div class="container">
                     <div class="column one">
                         <div class="copyright">
-                            &copy; 2018 BeMechanic 3 - BeTheme. Muffin group - HTML by <a target="_blank" rel="nofollow" href="http://bit.ly/1M6lijQ">BeantownThemes</a>
+                            {!! $footer->resumen !!}
                         </div>
 
                     </div>
@@ -90,14 +90,14 @@
     <div id="body_overlay"></div>
 
     <!-- JS -->
-    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
 
-    <script src="../../js/mfn.menu.js"></script>
-    <script src="../../js/jquery.plugins.js"></script>
-    <script src="../../js/jquery.jplayer.min.js"></script>
-    <script src="../../js/animations/animations.js"></script>
-    <script src="../../js/translate3d.js"></script>
-    <script src="../../js/scripts.js"></script>
+    <script src="{{ asset('js/mfn.menu.js') }}"></script>
+    <script src="{{ asset('js/jquery.plugins.js') }}"></script>
+    <script src="{{ asset('js/jquery.jplayer.min.js') }}"></script>
+    <script src="{{ asset('js/animations/animations.js') }}"></script>
+    <script src="{{ asset('js/translate3d.js') }}"></script>
+    <script src="{{ asset('js/scripts.js') }}"></script>
 
 
 </body>

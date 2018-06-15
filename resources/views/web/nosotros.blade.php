@@ -69,42 +69,22 @@
                 <div class="column mcb-column one-third column_image">
                     <div class="image_frame image_item no_link scale-with-grid no_border">
                         <div class="image_wrapper">
-                            <img class="scale-with-grid" src="images/home_mechanic3_about4.jpg">
+                            <img class="scale-with-grid" src="{{ $img_equipo[0] }}">
                         </div>
                     </div>
                 </div>
                 <div class="column mcb-column one-third column_image">
                     <div class="image_frame image_item no_link scale-with-grid no_border">
                         <div class="image_wrapper">
-                            <img class="scale-with-grid" src="images/home_mechanic3_about5.jpg">
+                            <img class="scale-with-grid" src="{{ $img_equipo[1] }}">
                         </div>
                     </div>
                 </div>
                 <div class="column mcb-column one-third column_image">
                     <div class="image_frame image_item no_link scale-with-grid no_border">
                         <div class="image_wrapper">
-                            <img class="scale-with-grid" src="images/home_mechanic3_about6.jpg">
+                            <img class="scale-with-grid" src="{{ $img_equipo[2] }}">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="section mcb-section" style="padding-top:80px; padding-bottom:30px; background-color:#3b3ea7">
-    <div class="section_wrapper mcb-section-inner">
-        <div class="wrap mcb-wrap one valign-top clearfix">
-            <div class="mcb-wrap-inner">
-                <div class="column mcb-column one column_column">
-                    <div class="column_attr clearfix align_center">
-                        <h2 style="color: #fff">Become our partner</h2>
-                        <hr class="no_line" style="margin: 0 auto 10px">
-                        <p style="color: #fff">
-                            Psum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-                            <br> cursus a sit amet mauris. Morbi accumsan ipsum velit.
-                        </p>
-                        <hr class="no_line" style="margin: 0 auto 25px">
-                        <a class="button  button_large button_theme button_js" href="contact.html"><span class="button_label">Go to contact</span></a>
                     </div>
                 </div>
             </div>
@@ -117,17 +97,17 @@
             <div class="mcb-wrap-inner">
                 <div class="column mcb-column one-fourth column_column">
                     <div class="column_attr clearfix" style=" background-image:url('images/home_mechanic3_pic15.png'); background-repeat:no-repeat; background-position:left top; padding:10px 0 10px 70px">
-                        <h4 style="margin: 0; color: #fff">+61 (0) 383 766 284</h4>
+                        <h4 style="margin: 0; color: #fff">{{ $contacto[0] }}</h4>
                     </div>
                 </div>
                 <div class="column mcb-column one-fourth column_column">
                     <div class="column_attr clearfix" style=" background-image:url('images/home_mechanic3_pic16.png'); background-repeat:no-repeat; background-position:left top; padding:10px 0 10px 70px">
-                        <h4 style="margin: 0; color: #fff"> <a href="#"><span>noreply@envato.com</span></a></h4>
+                        <h4 style="margin: 0; color: #fff"> <a href="#"><span>{{ $contacto[1] }}/span></a></h4>
                     </div>
                 </div>
                 <div class="column mcb-column one-second column_button">
                     <div class="button_align align_right">
-                        <a class="button  button_right button_size_2 button_stroke_custom button_js" href="contact.html" style=" border-color:#5f63d9 !important; color:#fff"><span class="button_icon"><i class="icon-right-open" style=" color:#fff !important"></i></span><span class="button_label">Make an online visit</span></a>
+                        <a class="button  button_right button_size_2 button_stroke_custom button_js" href="contact.html" style=" border-color:#5f63d9 !important; color:#fff"><span class="button_icon"><i class="icon-right-open" style=" color:#fff !important"></i></span><span class="button_label">Contactanos</span></a>
                     </div>
                 </div>
             </div>

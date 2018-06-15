@@ -25,8 +25,9 @@ class HomeController extends Controller
 	public function nosotros()
 	{
 		$nosotros = $this->drupal->getRequest('nosotros',true);
-
-		return view('web.nosotros',compact('nosotros'));
+		$equipo = $this->drupal->getRequest('nid',false,15);
+		$img_equipo = explode(',',$equipo->imagenes);
+		return view('web.nosotros',compact('nosotros','equipo','img_equipo'));
 	}
 
 }

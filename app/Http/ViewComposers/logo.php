@@ -17,7 +17,9 @@ class logo
 		$drupal = new Drupal;
 		$logo = $drupal->getRequest('logo');
 		$footer = $drupal->getRequest('nid',false,3);
+		$contacto = $drupal->getRequest('nid',false,16);
+		$contacto = explode('|', $contacto->resumen);
 
-		$view->with(compact('logo','footer'));
+		$view->with(compact('logo','footer','contacto'));
 	}
 }
