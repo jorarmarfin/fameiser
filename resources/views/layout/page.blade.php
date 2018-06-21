@@ -62,6 +62,29 @@
                             </div>
                         </div>
                         @yield('content')
+                        <div class="section mcb-section" style="padding-top:40px; padding-bottom:20px; background-color:#4e52cf">
+                            <div class="section_wrapper mcb-section-inner">
+                                <div class="wrap mcb-wrap one  column-margin-20px valign-top clearfix">
+                                    <div class="mcb-wrap-inner">
+                                        <div class="column mcb-column one-fourth column_column">
+                                            <div class="column_attr clearfix" style=" background-image:url('{{ asset("content/mechanic3/images/home_mechanic3_pic15.png") }}'); background-repeat:no-repeat; background-position:left top; padding:10px 0 10px 70px">
+                                                <h4 style="margin: 0; color: #fff">{{ $contacto[0] }}</h4>
+                                            </div>
+                                        </div>
+                                        <div class="column mcb-column one-fourth column_column">
+                                            <div class="column_attr clearfix" style=" background-image:url('{{ asset("content/mechanic3/images/home_mechanic3_pic16.png") }}'); background-repeat:no-repeat; background-position:left top; padding:10px 0 10px 70px">
+                                                <h4 style="margin: 0; color: #fff"> <a href="#"><span>{{ $contacto[1] }}/span></a></h4>
+                                            </div>
+                                        </div>
+                                        <div class="column mcb-column one-second column_button">
+                                            <div class="button_align align_right">
+                                                <a class="button  button_right button_size_2 button_stroke_custom button_js" href="contact.html" style=" border-color:#5f63d9 !important; color:#fff"><span class="button_icon"><i class="icon-right-open" style=" color:#fff !important"></i></span><span class="button_label">Contactanos</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

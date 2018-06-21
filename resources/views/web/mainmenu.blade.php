@@ -7,13 +7,13 @@
             <a href="{{ route('nosotros') }}"><span>Nosotros</span></a>
         </li>
         <li>
-            <a href="content/mechanic3/services.html"><span>Servicios</span></a>
+            <a href="{{ route('productos') }}"><span>Productos</span></a>
         </li>
+        {{-- <li>
+            <a href="#"><span>Productos</span></a>
+        </li> --}}
         <li>
-            <a href="content/mechanic3/pricelist.html"><span>Productos</span></a>
-        </li>
-        <li>
-            <a href="content/mechanic3/contact.html"><span>Contactenos</span></a>
+            <a href="3"><span>Contactenos</span></a>
         </li>
     </ul>
 </nav>

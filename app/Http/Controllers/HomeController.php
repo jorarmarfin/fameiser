@@ -29,5 +29,11 @@ class HomeController extends Controller
 		$img_equipo = explode(',',$equipo->imagenes);
 		return view('web.nosotros',compact('nosotros','equipo','img_equipo'));
 	}
+	public function productos()
+	{
+		$slogan = $this->drupal->getRequest('nid',false,17);
+		$productos = $this->drupal->getRequest('productos',true);
+		return view('web.productos',compact('slogan','productos'));
+	}
 
 }
