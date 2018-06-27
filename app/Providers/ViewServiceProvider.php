@@ -17,8 +17,10 @@ class ViewServiceProvider extends ServiceProvider
         view()->composer([
             'layout.index',
             'layout.page',
+            'layout.header',
             'web.nosotros',
             'web.productos',
+            'web.contactanos',
         ],logo::class);
     }
 

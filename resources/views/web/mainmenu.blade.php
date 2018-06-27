@@ -13,7 +13,7 @@
             <a href="#"><span>Productos</span></a>
         </li> --}}
         <li>
-            <a href="3"><span>Contactenos</span></a>
+            <a href="{{ route('contactanos') }}"><span>Contactenos</span></a>
         </li>
     </ul>
 </nav>

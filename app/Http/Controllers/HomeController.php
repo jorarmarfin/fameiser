@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactEmail;
 use App\Repositories\Drupal;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -34,6 +36,19 @@ class HomeController extends Controller
 		$slogan = $this->drupal->getRequest('nid',false,17);
 		$productos = $this->drupal->getRequest('productos',true);
 		return view('web.productos',compact('slogan','productos'));
+	}
+	public function contactanos()
+	{
+		$slogan = $this->drupal->getRequest('nid',false,22);
+		$contactanos = $this->drupal->getRequest('nid',false,14);
+		return view('web.contactanos',compact('slogan','contactanos'));
+	}
+	public function email(Request $request)
+	{
+		$datos = $request->all();
+        Mail::to('luis.mayta@gmail.com','Luis Mayta')
+                ->send(new ContactEmail($datos));
+		return redirect()->back();
 	}
 
 }
