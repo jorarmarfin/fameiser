@@ -109,7 +109,7 @@
 							revslider_showDoubleJqueryError("#rev_slider_1_1");
 						} else {
 							revapi1 = tpj("#rev_slider_1_1").show().revolution({
-								sliderType : "hero",
+								sliderType : "standard",
 								sliderLayout : "auto",
 								dottedOverlay : "none",
 								delay : 9000,
