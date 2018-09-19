@@ -73,7 +73,7 @@
                                         </div>
                                         <div class="column mcb-column one-fourth column_column">
                                             <div class="column_attr clearfix" style=" background-image:url('{{ asset("content/mechanic3/images/home_mechanic3_pic16.png") }}'); background-repeat:no-repeat; background-position:left top; padding:10px 0 10px 70px">
-                                                <h4 style="margin: 0; color: #fff"> <a href="#"><span>{{ $contacto[1] }}/span></a></h4>
+                                                <h4> <a href="#" style="margin: 0; color: #fff">{{ $contacto[1] }}</a></h4>
                                             </div>
                                         </div>
                                         <div class="column mcb-column one-second column_button">

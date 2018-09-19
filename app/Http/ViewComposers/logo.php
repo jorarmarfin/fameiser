@@ -20,7 +20,8 @@ class logo
 		$contacto = $drupal->getRequest('nid',false,16);
 		$contacto = explode('|', $contacto->resumen);
 		$header = $drupal->getRequest('nid',false,21);
+		$sliders = $drupal->getRequest('sliders',true);
 
-		$view->with(compact('logo','footer','contacto','header'));
+		$view->with(compact('logo','footer','contacto','header','sliders'));
 	}
 }

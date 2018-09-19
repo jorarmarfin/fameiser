@@ -18,11 +18,13 @@ class HomeController extends Controller
 
 	public function index()
 	{
+		$sliders = $this->drupal->getRequest('sliders',true);
 		$portada = $this->drupal->getRequest('portada',true);
-		$galeria = $this->drupal->getRequest('galeria',true);
-		$imagenes = explode(',',$galeria[0]->imagenes);
+		$galeria_productos = $this->drupal->getRequest('galeria-productos',true);
+		$garantia = $this->drupal->getRequest('nid',false,30);
+		$contactanos = $this->drupal->getRequest('nid',false,22);
 
-		return view('index',compact('portada','imagenes','galeria'));
+		return view('index',compact('portada','galeria_productos','sliders','garantia','contactanos'));
 	}
 	public function nosotros()
 	{
