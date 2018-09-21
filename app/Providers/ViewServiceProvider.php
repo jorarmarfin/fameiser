@@ -20,6 +20,7 @@ class ViewServiceProvider extends ServiceProvider
             'layout.header',
             'web.nosotros',
             'web.productos',
+            'web.producto',
             'web.contactanos',
         ],logo::class);
     }

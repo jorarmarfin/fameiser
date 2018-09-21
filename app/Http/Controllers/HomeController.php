@@ -39,6 +39,10 @@ class HomeController extends Controller
 		$productos = $this->drupal->getRequest('productos',true);
 		return view('web.productos',compact('slogan','productos'));
 	}
+	public function producto($prod)
+	{
+		return view('web.producto',compact('prod'));		
+	}
 	public function contactanos()
 	{
 		$slogan = $this->drupal->getRequest('nid',false,22);
