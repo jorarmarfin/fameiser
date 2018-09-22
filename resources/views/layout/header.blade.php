@@ -46,7 +46,7 @@
                         </div>
                         <div class="tp-caption   tp-resizeme" id="slide-1-layer-4" data-x="25" data-y="bottom" data-voffset="260" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-type="image" data-actions='[{"event":"click","action":"scrollbelow","offset":"-60px","delay":"","speed":"300","ease":"Power2.easeInOut"}]'
                             data-responsive_offset="on" data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;cursor:pointer"><img src="content/mechanic3/images/home_mechanic3_slider_pic1.png" data-ww="104px" data-hh="141px" width="104" height="141" data-no-retina="">
+                            data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;cursor:pointer"><img src="/content/mechanic3/images/home_mechanic3_slider_pic1.png" data-ww="104px" data-hh="141px" width="104" height="141" data-no-retina="">
                         </div>
                     </li>
                     @endforeach

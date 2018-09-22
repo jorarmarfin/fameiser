@@ -37,7 +37,7 @@
                     <div class="mcb-wrap-inner">
                         <div class="column mcb-column one column_column">
                             <div class="column_attr clearfix" style=" background-image:url('{{ $galeria_productos[0]->imagen }}'); background-repeat:no-repeat; background-position:center top; padding:50px 50px 35px; max-width: 500px">
-                                <a style="text-decoration: none;" href="{{ route('productos') }}">
+                                <a style="text-decoration: none;" href="{{ route('producto','refrigerante-fameiser') }}">
                                     <h4 class="themecolor">01</h4>
                                     <div style="width: 1px; height: 140px; background: #348880; margin-bottom: 15px"></div>
                                     <h3 style="color: #fff">{{ $galeria_productos[0]->titulo }}</h3>

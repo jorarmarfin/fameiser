@@ -41,7 +41,13 @@ class HomeController extends Controller
 	}
 	public function producto($prod)
 	{
-		return view('web.producto',compact('prod'));		
+		switch ($prod) {
+			case 'refrigerante-fameiser':
+				$nid=26;
+			break;			
+		}
+		$producto = $this->drupal->getRequest('nid',false,$nid);
+		return view('web.producto',compact('producto'));		
 	}
 	public function contactanos()
 	{
