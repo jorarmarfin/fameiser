@@ -46,7 +46,7 @@
                         </div>
                         <div class="column mcb-column one column_column">
                             <div class="column_attr clearfix" style=" background-image:url('{{ $galeria_productos[1]->imagen }}'); background-repeat:no-repeat; background-position:center top; padding:50px 50px 35px; max-width: 500px">
-                                <a style="text-decoration: none;" href="{{ route('productos') }}">
+                                <a style="text-decoration: none;" href="{{ route('producto','agua-optima-fameiser') }}">
                                     <h4 class="themecolor">03</h4>
                                     <div style="width: 1px; height: 140px; background: #287991; margin-bottom: 15px"></div>
                                     <h3 style="color: #fff">{{ $galeria_productos[1]->titulo }}
@@ -60,7 +60,7 @@
                     <div class="mcb-wrap-inner">
                         <div class="column mcb-column one column_column">
                             <div class="column_attr clearfix" style=" background-image:url('{{ $galeria_productos[2]->imagen }}'); background-repeat:no-repeat; background-position:center top; padding:50px 50px 35px; max-width: 500px">
-                                <a style="text-decoration: none;" href="{{ route('productos') }}">
+                                <a style="text-decoration: none;" href="{{ route('producto','refrigerante-fameiser-potenciado') }}">
                                     <h4 class="themecolor">02</h4>
                                     <div style="width: 1px; height: 140px; background: #2b7684; margin-bottom: 15px"></div>
                                     <h3 style="color: #fff">{{ $galeria_productos[2]->titulo }}</h3>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="column mcb-column one column_column">
                             <div class="column_attr clearfix" style=" background-image:url('{{ $galeria_productos[3]->imagen }}'); background-repeat:no-repeat; background-position:center top; padding:50px 50px 35px; max-width: 500px">
-                                <a style="text-decoration: none;" href="{{ route('productos') }}">
+                                <a style="text-decoration: none;" href="{{ route('producto','refrigerante-fameiser-premium') }}">
                                     <h4 class="themecolor">04</h4>
                                     <div style="width: 1px; height: 140px; background: #348880; margin-bottom: 15px"></div>
                                     <h3 style="color: #fff">{{ $galeria_productos[3]->titulo }}</h3>

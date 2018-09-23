@@ -44,6 +44,12 @@ class HomeController extends Controller
 		switch ($prod) {
 			case 'refrigerante-fameiser':
 				$nid=26;
+			case 'agua-optima-fameiser':
+				$nid=27;
+			case 'refrigerante-fameiser-potenciado':
+				$nid=28;
+			case 'refrigerante-fameiser-premium':
+				$nid=29;
 			break;			
 		}
 		$producto = $this->drupal->getRequest('nid',false,$nid);
