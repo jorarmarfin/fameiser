@@ -5,7 +5,7 @@
     </div>
     <div class="section mcb-section equal-height-wrap" style="padding-top:2rem; background-color:#fff; padding-bottom:0px">
         <div class="section_wrapper mcb-section-inner">
-            <div class="wrap mcb-wrap one-second valign-middle clearfix" style="height: 506px;">
+            <div class="wrap mcb-wrap one-third valign-middle clearfix" style="height: 506px;">
                 <div class="mcb-wrap-inner">
                     <div class="column mcb-column one column_column">
                         <div class="column_attr clearfix align_center" >
@@ -14,50 +14,29 @@
                                     <img class="scale-with-grid-60" src="{{ $producto->imagen }}">
                                 </div>
                             </div>
-                            <hr class="no_line" style="margin: 0 auto 90px">
-                            <h2 style="color: #fff">Fusce velit laoreet</h2>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="wrap mcb-wrap one-second valign-middle clearfix" style="padding: 0px 0px 0px 8%; height: 506px;">
+            <div class="wrap mcb-wrap two-third valign-middle clearfix" style="padding: 0px 0px 0px 8%; height: 506px;">
                 <div class="mcb-wrap-inner">
                     <div class="column mcb-column one column_column">
                         <div class="column_attr clearfix">
-                            <table class="mechanic3-table">
-                                <tbody><tr>
-                                    <td class="td1">Ut ultricies imperdiet</td>
-                                    <td class="td2">$ 5 - 12</td>
-                                </tr>
-                                <tr>
-                                    <td class="td1">Proin bibendum sollicitudin</td>
-                                    <td class="td2">$ 12 - 20</td>
-                                </tr>
-                                <tr>
-                                    <td class="td1">Curabitur ut egestas</td>
-                                    <td class="td2">$ 30 - 50</td>
-                                </tr>
-                                <tr>
-                                    <td class="td1">Integer magna purus</td>
-                                    <td class="td2">$ 40 - 50</td>
-                                </tr>
-                                <tr>
-                                    <td class="td1">In pulvinar ipsum</td>
-                                    <td class="td2">$ 30 - 70</td>
-                                </tr>
-                                <tr>
-                                    <td class="td1">Nam massa erat</td>
-                                    <td class="td2">$ 10 - 15</td>
-                                </tr>
-                                <tr>
-                                    <td class="td1">Ut ultricies imperdiet</td>
-                                    <td class="td2">$ 5 - 30</td>
-                                </tr>
-                                <tr>
-                                    <td class="td1">Proin bibendum sollicitudin</td>
-                                    <td class="td2">$ 10 - 40</td>
-                                </tr>
-                            </tbody></table>
+                            <h3>Cuando usar este producto</h3>
+                            <p>Vehículos que trabajan con mucha exigencia y que alguna vez han usado y/o vienen usando productos de baja calidad en el sistema y/o agua de mesa, agua mineral y/o agua potable de consumo humano. Por este motivo ven una elevación de la temperatura de funcionamiento del sistema cada vez más frecuente, visitando al menos cada 2 meses a un especialista para evaluar el sistema.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section mcb-section equal-height-wrap" style="padding-top:2rem; background-color:#fff; padding-bottom:0px">
+        <div class="section_wrapper mcb-section-inner">
+            <div class="wrap mcb-wrap one valign-middle clearfix">
+                <div class="mcb-wrap-inner">
+                    <div class="column mcb-column one column_column">
+                        <div class="column_attr clearfix">
+                            {!! $producto->body !!}
                         </div>
                     </div>
                 </div>

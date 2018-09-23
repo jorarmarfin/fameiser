@@ -22,7 +22,7 @@ class HomeController extends Controller
 		$portada = $this->drupal->getRequest('portada',true);
 		$galeria_productos = $this->drupal->getRequest('galeria-productos',true);
 		$garantia = $this->drupal->getRequest('nid',false,30);
-		$contactanos = $this->drupal->getRequest('nid',false,22);
+		$contactanos = $this->drupal->getRequest('nid',false,14);
 
 		return view('index',compact('portada','galeria_productos','sliders','garantia','contactanos'));
 	}

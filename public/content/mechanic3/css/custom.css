@@ -1,4 +1,8 @@
 img.scale-with-grid-60 {
-    width: 60%;
+    width: 75%;
     border: solid 1px #ccc;
+}
+
+dt.my-dt {
+    width: 14rem;
 }
