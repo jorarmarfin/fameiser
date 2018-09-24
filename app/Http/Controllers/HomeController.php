@@ -57,7 +57,7 @@ class HomeController extends Controller
 	}
 	public function contactanos()
 	{
-		$slogan = $this->drupal->getRequest('nid',false,22);
+		$slogan = $this->drupal->getRequest('nid',false,14);
 		$contactanos = $this->drupal->getRequest('nid',false,14);
 		return view('web.contactanos',compact('slogan','contactanos'));
 	}
