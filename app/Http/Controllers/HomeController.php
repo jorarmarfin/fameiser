@@ -44,10 +44,13 @@ class HomeController extends Controller
 		switch ($prod) {
 			case 'refrigerante-fameiser':
 				$nid=26;
+			break;
 			case 'agua-optima-fameiser':
 				$nid=27;
+			break;
 			case 'refrigerante-fameiser-potenciado':
 				$nid=28;
+			break;
 			case 'refrigerante-fameiser-premium':
 				$nid=29;
 			break;			
