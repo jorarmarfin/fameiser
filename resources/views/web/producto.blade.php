@@ -23,7 +23,7 @@
                     <div class="column mcb-column one column_column">
                         <div class="column_attr clearfix">
                             <h3>Cuando usar este producto</h3>
-                            <p>Vehículos que trabajan con mucha exigencia y que alguna vez han usado y/o vienen usando productos de baja calidad en el sistema y/o agua de mesa, agua mineral y/o agua potable de consumo humano. Por este motivo ven una elevación de la temperatura de funcionamiento del sistema cada vez más frecuente, visitando al menos cada 2 meses a un especialista para evaluar el sistema.</p>
+                            {!! $producto->descripcion !!}
                         </div>
                     </div>
                 </div>
