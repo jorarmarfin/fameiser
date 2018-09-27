@@ -3,6 +3,14 @@ img.scale-with-grid-60 {
     border: solid 1px #ccc;
 }
 
-dt.my-dt {
-    width: 14rem;
+table.tabla-productos tr td:first-child {
+    color: #fff;
+    width: 15rem;
+    font-weight: bold;
+    background-color: #2a2a5f!important;
+}
+table.tabla-productos tr td:last-child {
+    text-align: left;
+    padding-left: 1.5rem;
+    background-color: #3e3e65!important;
 }
