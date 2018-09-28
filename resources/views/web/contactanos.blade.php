@@ -3,6 +3,20 @@
 @section('slogan',$slogan->titulo)
 
 @section('content')
+<div class="section mcb-section equal-height-wrap" style="padding-top:2rem; background-color:#fff; padding-bottom:0px">
+    <div class="section_wrapper mcb-section-inner">
+        <div class="wrap mcb-wrap one valign-middle clearfix" style="padding: 0px 0px 0px 8%; height: 506px;">
+            <div class="mcb-wrap-inner">
+                <div class="column mcb-column one column_column">
+                    <div class="column_attr clearfix">
+                        <h3>{{ $donde->titulo }}</h3>
+                        {!! $donde->body !!}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="section mcb-section no-margin-h no-margin-v" style="padding-top:0px; padding-bottom:0px">
     <div class="section_wrapper mcb-section-inner">
         <div class="wrap mcb-wrap one-fourth valign-top clearfix">
@@ -24,10 +38,10 @@
                 </div>
                 <div class="column mcb-column one column_column">
                     <div class="column_attr clearfix" style=" padding:40px 40px 25px">
-                        <h5 style="color: #6781e5">Aliquam consectetur orci eget dictum</h5>
-                        <h6>John Smith Nowak</h6>
+                        <h5 style="color: #6781e5">Jr. Los Líquenes 742 Urb. San Silvestre, Lima 36</h5>
+                        <h6>Dennis caparachin</h6>
                         <p>
-                            <a href="#"><span>noreply@envato.com</span></a>
+                            <a href="#"><span>dennis.caparachin@fameiser.com</span></a>
                             <br> +61 (0) 3 8376 6284
                         </p>
                     </div>

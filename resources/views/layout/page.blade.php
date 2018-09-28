@@ -126,7 +126,7 @@
 
     <script>
         function google_maps_5ace49a803440() {
-            var latlng = new google.maps.LatLng(-12.0176417, -77.0057973);
+            var latlng = new google.maps.LatLng(-12.037675, -76.9506127);
             var myOptions = {
                 zoom: 16,
                 center: latlng,

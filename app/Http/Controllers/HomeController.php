@@ -65,8 +65,9 @@ class HomeController extends Controller
 	{
 		$slogan = $this->drupal->getRequest('nid',false,14);
 		$contactanos = $this->drupal->getRequest('nid',false,14);
+		$donde = $this->drupal->getRequest('nid',false,31);
 		$current_menu = 'contactanos';
-		return view('web.contactanos',compact('slogan','contactanos','current_menu'));
+		return view('web.contactanos',compact('slogan','contactanos','donde','current_menu'));
 	}
 	public function email(Request $request)
 	{
