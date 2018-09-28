@@ -9,9 +9,9 @@
         <li>
             <a href="{{ route('productos') }}"><span>Productos</span></a>
         </li>
-        {{-- <li>
-            <a href="#"><span>Productos</span></a>
-        </li> --}}
+        <li>
+            <a href="#"><span>Garantia</span></a>
+        </li>
         <li>
             <a href="{{ route('contactanos') }}"><span>Contactenos</span></a>
         </li>
