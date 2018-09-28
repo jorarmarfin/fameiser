@@ -87,7 +87,7 @@
                     <div class="mcb-wrap-inner">
                         <div class="column mcb-column one column_column">
                             <div class="column_attr clearfix" style=" padding:100px 0 45px">
-                                <h2 class="themecolor">{{ $garantia->titulo }}</h2>
+                                <h2 class="themecolor">{{ $garantia->titulo }} <span class="marca-registrada">&#174</span> </h2>
                             </div>
                         </div>
                         <div class="column mcb-column one column_column">
