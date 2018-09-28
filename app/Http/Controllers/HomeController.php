@@ -23,21 +23,24 @@ class HomeController extends Controller
 		$galeria_productos = $this->drupal->getRequest('galeria-productos',true);
 		$garantia = $this->drupal->getRequest('nid',false,30);
 		$contactanos = $this->drupal->getRequest('nid',false,14);
+		$current_menu = 'inicio';
 
-		return view('index',compact('portada','galeria_productos','sliders','garantia','contactanos'));
+		return view('index',compact('portada','galeria_productos','sliders','garantia','contactanos','current_menu'));
 	}
 	public function nosotros()
 	{
 		$nosotros = $this->drupal->getRequest('nosotros',true);
 		$equipo = $this->drupal->getRequest('nid',false,15);
 		$img_equipo = explode(',',$equipo->imagenes);
-		return view('web.nosotros',compact('nosotros','equipo','img_equipo'));
+		$current_menu = 'nosotros';
+		return view('web.nosotros',compact('nosotros','equipo','img_equipo','current_menu'));
 	}
 	public function productos()
 	{
 		$slogan = $this->drupal->getRequest('nid',false,17);
 		$productos = $this->drupal->getRequest('productos',true);
-		return view('web.productos',compact('slogan','productos'));
+		$current_menu = 'productos';
+		return view('web.productos',compact('slogan','productos','current_menu'));
 	}
 	public function producto($prod)
 	{
@@ -62,7 +65,8 @@ class HomeController extends Controller
 	{
 		$slogan = $this->drupal->getRequest('nid',false,14);
 		$contactanos = $this->drupal->getRequest('nid',false,14);
-		return view('web.contactanos',compact('slogan','contactanos'));
+		$current_menu = 'contactanos';
+		return view('web.contactanos',compact('slogan','contactanos','current_menu'));
 	}
 	public function email(Request $request)
 	{
