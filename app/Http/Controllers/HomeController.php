@@ -59,7 +59,8 @@ class HomeController extends Controller
 			break;			
 		}
 		$producto = $this->drupal->getRequest('nid',false,$nid);
-		return view('web.producto',compact('producto'));		
+		$current_menu = 'productos';
+		return view('web.producto',compact('producto','current_menu'));		
 	}
 	public function contactanos()
 	{
