@@ -5,10 +5,10 @@ Tienes un mensaje de {{ $datos['nombre'] }}
 @stop
 
 @section('content')
-{{ $datos['mensaje'] }}
 <p><strong>Asunto:</strong> {{ $datos['asunto'] }} </p></br>
+{{ $datos['mensaje'] }}
 
 <p>Este mensaje se ha enviado desde la pagina web.</p>
 @stop
 
-@section('notes','Para mayor detalles comuniquese al siguiente correo luis.mayta@gmail.com')
+@section('notes','Para mayor detalles comuniquese al siguiente correo dennis.caparachin@fameiser.com')

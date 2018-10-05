@@ -38,9 +38,10 @@ class HomeController extends Controller
 	public function productos()
 	{
 		$slogan = $this->drupal->getRequest('nid',false,17);
-		$productos = $this->drupal->getRequest('productos',true);
+		$mantenimiento = $this->drupal->getRequest('mantenimiento',true);
+		$galeria_productos = $this->drupal->getRequest('galeria-productos',true);
 		$current_menu = 'productos';
-		return view('web.productos',compact('slogan','productos','current_menu'));
+		return view('web.productos',compact('slogan','mantenimiento','current_menu','galeria_productos'));
 	}
 	public function producto($prod)
 	{
@@ -73,7 +74,8 @@ class HomeController extends Controller
 	public function email(Request $request)
 	{
 		$datos = $request->all();
-        Mail::to('luis.mayta@gmail.com','Luis Mayta')
+		Mail::to('informacion@fameiser.com','Informacion')
+				->cc('denisc20@gmail.com')
                 ->send(new ContactEmail($datos));
 		return redirect()->back();
 	}

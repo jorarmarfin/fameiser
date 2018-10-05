@@ -38,12 +38,7 @@
                 </div>
                 <div class="column mcb-column one column_column">
                     <div class="column_attr clearfix" style=" padding:40px 40px 25px">
-                        <h5 style="color: #6781e5">Jr. Los Líquenes 742 Urb. San Silvestre, Lima 36</h5>
-                        <h6>Dennis caparachin</h6>
-                        <p>
-                            <a href="#"><span>dennis.caparachin@fameiser.com</span></a>
-                            <br> +61 (0) 3 8376 6284
-                        </p>
+                        {!! $donde->descripcion !!}
                     </div>
                 </div>
             </div>
@@ -79,6 +74,9 @@
                                     <textarea placeholder="Mensaje" name="mensaje" id="mensaje" style="width:100%;" rows="10" aria-invalid="false"></textarea>
                                 </div>
                                 <div class="column one">
+                                    <div class="g-recaptcha" data-sitekey="6LewlXMUAAAAAOt9oxGQ1IOG4UbVtufi2cPVKGNE"></div>
+                                </div>
+                                <div class="column one">
                                     <input type="submit" value="Envia el mensaje" id="submit" >
                                 </div>
                             </form>
@@ -92,5 +90,124 @@
 </div>
 @endsection
 
-
+@section('scripts')
+<script>
+    function google_maps_5ace49a803440() {
+        var latlng = new google.maps.LatLng(-12.0376274,-76.9483873);
+        var myOptions = {
+            zoom: 16,
+            center: latlng,
+            mapTypeId : google.maps.MapTypeId.ROADMAP,
+            styles : [{
+                    featureType : "all",
+                    elementType : "labels",
+                    stylers : [{
+                        visibility : "on"
+                    }]
+                }, {
+                    featureType : "administrative",
+                    elementType : "all",
+                    stylers : [{
+                        visibility : "off"
+                    }]
+                }, {
+                    featureType : "landscape",
+                    elementType : "all",
+                    stylers : [{
+                        color : "#2b1e76"
+                    }, {
+                        visibility : "simplified"
+                    }]
+                }, {
+                    featureType : "poi",
+                    elementType : "all",
+                    stylers : [{
+                        visibility : "off"
+                    }]
+                }, {
+                    featureType : "road",
+                    elementType : "all",
+                    stylers : [{
+                        visibility : "on"
+                    }]
+                }, {
+                    featureType : "road",
+                    elementType : "geometry",
+                    stylers : [{
+                        color : "#2b1e76"
+                    }, {
+                        lightness : "30"
+                    }, {
+                        saturation : "-10"
+                    }]
+                }, {
+                    featureType : "road",
+                    elementType : "labels.text",
+                    stylers : [{
+                        visibility : "on"
+                    }]
+                }, {
+                    featureType : "road",
+                    elementType : "labels.text.fill",
+                    stylers : [{
+                        color : "#2b1e76"
+                    }, {
+                        lightness : "80"
+                    }]
+                }, {
+                    featureType : "road",
+                    elementType : "labels.text.stroke",
+                    stylers : [{
+                        color : "#2b1e76"
+                    }, {
+                        lightness : "0"
+                    }]
+                }, {
+                    featureType : "road",
+                    elementType : "labels.icon",
+                    stylers : [{
+                        visibility : "off"
+                    }]
+                }, {
+                    featureType : "transit",
+                    elementType : "all",
+                    stylers : [{
+                        visibility : "simplified"
+                    }, {
+                        color : "#2b1e76"
+                    }, {
+                        lightness : "50"
+                    }]
+                }, {
+                    featureType : "transit.station",
+                    elementType : "all",
+                    stylers : [{
+                        visibility : "off"
+                    }]
+                }, {
+                    featureType : "water",
+                    elementType : "all",
+                    stylers : [{
+                        color : "#2b1e76"
+                    }, {
+                        lightness : "-20"
+                    }]
+                }],
+            zoomControl : true,
+            mapTypeControl : false,
+            streetViewControl : false,
+            scrollwheel : false,
+        }
+        var map = new google.maps.Map(document.getElementById('google-map-area-5ace49a803440'),myOptions);
+        var marker = new google.maps.Marker({
+            position: latlng,
+            icon : "content/mechanic3/images/home_mechanic3_pic14.png",
+            map: map
+        });
+        }
+    jQuery(document).ready(function($) {
+        google_maps_5ace49a803440();
+    });
+</script>
+@endsection
 @section('title-page','Contactanos')

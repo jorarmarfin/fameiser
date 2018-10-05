@@ -30,7 +30,9 @@
     <!-- CSS -->
     @include('layout.css')
     <!-- Revolution Slider -->
-    <link rel="stylesheet" href="plugins/rs-plugin/css/settings.css">
+	<link rel="stylesheet" href="plugins/rs-plugin/css/settings.css">
+	
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 
 </head>
 
@@ -140,7 +142,7 @@
     </script>
     <script>
     function google_maps_5ace49a803440() {
-        var latlng = new google.maps.LatLng(-12.037675, -76.9506127);
+        var latlng = new google.maps.LatLng(-12.0376274,-76.9483873);
 		var myOptions = {
 			zoom: 16,
 			center: latlng,
