@@ -3,7 +3,7 @@
 @section('content')
     <div class="section" style="padding:1rem; background-image: url('/images/home_mechanic3_sectionbg2.png'); background-repeat: no-repeat; background-position: center bottom; ">
     </div>
-    <div class="section mcb-section equal-height-wrap" style="padding-top:2rem; background-color:#fff; padding-bottom:0px">
+    <div class="section mcb-section equal-height-wrap" style="padding-top:2rem; background-color:#fff; padding-bottom:0px; text-align: justify; ">
         <div class="section_wrapper mcb-section-inner">
             <div class="wrap mcb-wrap one-third valign-middle clearfix" style="height: 506px;">
                 <div class="mcb-wrap-inner">
