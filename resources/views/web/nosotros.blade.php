@@ -9,6 +9,24 @@
             <div class="mcb-wrap-inner">
                 <div class="column mcb-column one column_hover_box">
                     <div class="hover_box">
+                        <a href="{{ $video->enlace_simple }}" rel="prettyphoto">
+                            <div class="hover_box_wrapper">
+                                <img class="visible_photo scale-with-grid" src="{{ $video->imagen }}">
+                                <img class="hidden_photo scale-with-grid" src="{{ $video->imagen }}">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section mcb-section" style="padding-top:0px; padding-bottom:0px">
+    <div class="section_wrapper mcb-section-inner">
+        <div class="wrap mcb-wrap one valign-top clearfix">
+            <div class="mcb-wrap-inner">
+                <div class="column mcb-column one column_hover_box">
+                    <div class="hover_box">
                         <a href="https://vimeo.com/55774501" rel="prettyphoto">
                             <div class="hover_box_wrapper">
                                 <img class="visible_photo scale-with-grid" src="{{ $nosotros[0]->imagen }}">

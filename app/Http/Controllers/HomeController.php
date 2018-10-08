@@ -30,10 +30,11 @@ class HomeController extends Controller
 	public function nosotros()
 	{
 		$nosotros = $this->drupal->getRequest('nosotros',true);
+		$video = $this->drupal->getRequest('video',false);
 		$equipo = $this->drupal->getRequest('nid',false,15);
 		$img_equipo = explode(',',$equipo->imagenes);
 		$current_menu = 'nosotros';
-		return view('web.nosotros',compact('nosotros','equipo','img_equipo','current_menu'));
+		return view('web.nosotros',compact('nosotros','equipo','img_equipo','current_menu','video'));
 	}
 	public function productos()
 	{
@@ -47,7 +48,7 @@ class HomeController extends Controller
 	{
 		switch ($prod) {
 			case 'refrigerante-fameiser':
-				$nid=26;
+				$nid=29;
 			break;
 			case 'agua-optima-fameiser':
 				$nid=27;
@@ -56,7 +57,7 @@ class HomeController extends Controller
 				$nid=28;
 			break;
 			case 'refrigerante-fameiser-premium':
-				$nid=29;
+				$nid=26;
 			break;			
 		}
 		$producto = $this->drupal->getRequest('nid',false,$nid);
@@ -77,6 +78,20 @@ class HomeController extends Controller
 		$servicio = $this->drupal->getRequest('nid',false,36);
 		$current_menu = 'contactanos';
 		return view('web.servicios',compact('pagina_servicio','current_menu','servicio'));
+	}
+	public function ofertas()
+	{
+		$ofertas = $this->drupal->getRequest('nid',false,37);
+		$servicio = $this->drupal->getRequest('nid',false,36);
+		$current_menu = 'ofertas';
+		return view('web.ofertas',compact('ofertas','servicio','current_menu'));
+	}
+	public function garantia()
+	{
+		$garantia = $this->drupal->getRequest('nid',false,30);
+		$fortalezas = $this->drupal->getRequest('fortalezas',true);
+		$current_menu = 'garantia';
+		return view('web.garantia',compact('garantia','fortalezas','current_menu'));
 	}
 	public function email(Request $request)
 	{

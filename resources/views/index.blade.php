@@ -29,14 +29,14 @@
                             <hr class="no_line" style="margin: 0 auto 40px">
                         </div>
                         <div class="column mcb-column one column_button">
-                            <a class="button button_size_2 button_js" href="{{ route('productos') }}" style=" color:#fff"><span class="button_label">Nuestras Ofertas</span></a>
+                            <a class="button button_size_2 button_js" href="{{ route('ofertas') }}" style=" color:#fff"><span class="button_label">Nuestras Ofertas</span></a>
                         </div>
                     </div>
                 </div>
                 <div class="wrap mcb-wrap one-third valign-top clearfix" style="padding:120px 0 0">
                     <div class="mcb-wrap-inner">
                         <div class="column mcb-column one column_column">
-                            <div class="column_attr clearfix" style=" background-image:url('{{ $galeria_productos[0]->imagen }}'); background-repeat:no-repeat; background-position:center top; padding:50px 50px 35px; max-width: 500px">
+                            <div class="column_attr clearfix" style=" background-image:url('{{ $galeria_productos[0]->imagen_portada }}'); background-repeat:no-repeat; background-position:center top; padding:50px 50px 35px; max-width: 500px">
                                 <a style="text-decoration: none;" href="{{ route('producto','refrigerante-fameiser') }}">
                                     <h4 class="themecolor">01</h4>
                                     <div style="width: 1px; height: 140px; background: #348880; margin-bottom: 15px"></div>
@@ -45,7 +45,7 @@
                             </div>
                         </div>
                         <div class="column mcb-column one column_column">
-                            <div class="column_attr clearfix" style=" background-image:url('{{ $galeria_productos[1]->imagen }}'); background-repeat:no-repeat; background-position:center top; padding:50px 50px 35px; max-width: 500px">
+                            <div class="column_attr clearfix" style=" background-image:url('{{ $galeria_productos[1]->imagen_portada }}'); background-repeat:no-repeat; background-position:center top; padding:50px 50px 35px; max-width: 500px">
                                 <a style="text-decoration: none;" href="{{ route('producto','refrigerante-fameiser-premium') }}">
                                     <h4 class="themecolor">02</h4>
                                     <div style="width: 1px; height: 140px; background: #287991; margin-bottom: 15px"></div>
@@ -59,7 +59,7 @@
                 <div class="wrap mcb-wrap one-third valign-top clearfix">
                     <div class="mcb-wrap-inner">
                         <div class="column mcb-column one column_column">
-                            <div class="column_attr clearfix" style=" background-image:url('{{ $galeria_productos[2]->imagen }}'); background-repeat:no-repeat; background-position:center top; padding:50px 50px 35px; max-width: 500px">
+                            <div class="column_attr clearfix" style=" background-image:url('{{ $galeria_productos[2]->imagen_portada }}'); background-repeat:no-repeat; background-position:center top; padding:50px 50px 35px; max-width: 500px">
                                 <a style="text-decoration: none;" href="{{ route('producto','refrigerante-fameiser-potenciado') }}">
                                     <h4 class="themecolor">03</h4>
                                     <div style="width: 1px; height: 140px; background: #2b7684; margin-bottom: 15px"></div>
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <div class="column mcb-column one column_column">
-                            <div class="column_attr clearfix" style=" background-image:url('{{ $galeria_productos[3]->imagen }}'); background-repeat:no-repeat; background-position:center top; padding:50px 50px 35px; max-width: 500px">
+                            <div class="column_attr clearfix" style=" background-image:url('{{ $galeria_productos[3]->imagen_portada }}'); background-repeat:no-repeat; background-position:center top; padding:50px 50px 35px; max-width: 500px">
                                 <a style="text-decoration: none;" href="{{ route('producto','agua-optima-fameiser') }}">
                                     <h4 class="themecolor">04</h4>
                                     <div style="width: 1px; height: 140px; background: #348880; margin-bottom: 15px"></div>
@@ -145,11 +145,11 @@
                                 <h4 style="color: #fff">Los productos de FAMEISER tienen los aditivos necesarios de acuerdo a tus necesidades, buscando siempre optimizar tu inversión en el cuidado de tu vehículo automotriz. <br> ¡Danos una oportunidad para mostrarte lo mejor de nosotros!</h4>
                             </div>
                         </div>
-                        <div class="column mcb-column one column_button">
+                        {{-- <div class="column mcb-column one column_button">
                             <div class="button_align align_center">
                                 <a class="button  button_left button_size_2 button_js" href="{{ route('productos') }}" style=" color:#fff"><span class="button_icon"><i class="icon-list" style=" color:#fff !important"></i></span><span class="button_label">Lista de Precios</span></a>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
