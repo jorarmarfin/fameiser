@@ -18,5 +18,10 @@
         <li @if ($current_menu=='contactanos')class='current-menu-item' @endif>
             <a href="{{ route('contactanos') }}"><span>Contactenos</span></a>
         </li>
+        @foreach ($redes as $item)
+        <li class="{{ $item->titulo }}">
+            <a href="{{ $item->enlace_simple }}" title="{{ $item->titulo }}"><i class="{{ $item->icono }}"></i></a>
+        </li>
+        @endforeach
     </ul>
 </nav>

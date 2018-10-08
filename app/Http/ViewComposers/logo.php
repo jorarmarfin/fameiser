@@ -21,7 +21,8 @@ class logo
 		$contacto = explode('|', $contacto->resumen);
 		$header = $drupal->getRequest('nid',false,21);
 		$sliders = $drupal->getRequest('sliders',true);
+		$redes = $drupal->getRequest('redes-sociales',true);
 
-		$view->with(compact('logo','footer','contacto','header','sliders'));
+		$view->with(compact('logo','footer','contacto','header','sliders','redes'));
 	}
 }
