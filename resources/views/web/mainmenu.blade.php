@@ -12,6 +12,9 @@
         <li @if ($current_menu=='garantia')class='current-menu-item' @endif>
             <a href="#"><span>Garantia</span></a>
         </li>
+        <li @if ($current_menu=='servicios')class='current-menu-item' @endif>
+            <a href="{{ route('servicios') }}"><span>Servicios</span></a>
+        </li>
         <li @if ($current_menu=='contactanos')class='current-menu-item' @endif>
             <a href="{{ route('contactanos') }}"><span>Contactenos</span></a>
         </li>

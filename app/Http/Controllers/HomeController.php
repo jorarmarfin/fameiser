@@ -71,6 +71,13 @@ class HomeController extends Controller
 		$current_menu = 'contactanos';
 		return view('web.contactanos',compact('slogan','contactanos','donde','current_menu'));
 	}
+	public function servicios()
+	{
+		$pagina_servicio = $this->drupal->getRequest('nid',false,35);
+		$servicio = $this->drupal->getRequest('nid',false,36);
+		$current_menu = 'contactanos';
+		return view('web.servicios',compact('pagina_servicio','current_menu','servicio'));
+	}
 	public function email(Request $request)
 	{
 		$datos = $request->all();
