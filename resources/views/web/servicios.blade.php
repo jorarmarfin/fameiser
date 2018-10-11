@@ -16,7 +16,14 @@
         </div>
     </div>
 </div>
-<div class="section mcb-section equal-height-wrap" style="padding-top:120px; padding-bottom:0px">
+<div class="section mcb-section equal-height-wrap" style="padding-top:2rem; padding-bottom:0px; background-color: white">
+        <div class="section_wrapper mcb-section-inner">
+            <div class="wrap mcb-wrap one valign-top clearfix">
+                    {!! $pagina_servicio->body !!}
+            </div>
+        </div>
+</div>
+<div class="section mcb-section equal-height-wrap" style="padding-top:2rem; padding-bottom:0px">
     <div class="section_wrapper mcb-section-inner">
         <div class="wrap mcb-wrap one-second valign-middle clearfix">
             <div class="mcb-wrap-inner">
@@ -28,7 +35,7 @@
                             </div>
                         </div>
                         <hr class="no_line" style="margin: 0 auto 90px">
-                        <h2 style="color: #fff">Fusce velit laoreet</h2>
+                        <h2 style="color: #fff">{!! $servicio->descripcion !!}</h2>
                     </div>
                 </div>
             </div>
